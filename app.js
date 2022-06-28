@@ -83,5 +83,15 @@ const setSuccess = (element) => {
 
   wrapperBorder.style.border = '1.3px solid #ffffff';
 
+  clearFields()
+
   alert('Registration succession')
+}
+
+const clearFields = () => {
+  firstname.value = '';
+  lastname.value = '';
+  email.value = '';
+  password.value = '';
+  confirmPassword = '';
 }
