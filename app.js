@@ -62,7 +62,6 @@ document.getElementById('reg-form').addEventListener('submit', (e) => {
   }else{
     setSuccess(confirmPassword)
   }
-  
 
    e.preventDefault();
 });
@@ -74,10 +73,15 @@ const setError = ( message , element ) => {
 
   errorDisplay.innerText = message;
   wrapperBorder.style.borderColor = 'red';
+
+  setTimeout(function(){errorDisplay.remove(); wrapperBorder.style.borderColor = '#ffff'; 
+  }, 4000);
 }
 
 const setSuccess = (element) => {
   const wrapperBorder = element.parentElement;
 
   wrapperBorder.style.border = '1.3px solid #ffffff';
+
+  alert('Registration succession')
 }
