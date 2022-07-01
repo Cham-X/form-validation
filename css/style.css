@@ -10,7 +10,9 @@
 }
 body{
   /* background-color: var(--primary-color); */
-  background-image: radial-gradient(circle, #3a3839, #4b4a4c, #5d5d5f, #6f7173, #828587, #8f9394, #9da1a2, #abafaf, #b5baba, #c0c4c4, #cacfcf, #d5dada);
+  background: radial-gradient(circle, #3a3839, #4b4a4c, #5d5d5f, #6f7173, #828587, #8f9394, #9da1a2, #abafaf, #b5baba, #c0c4c4, #cacfcf, #d5dada) no-repeat center center/cover;
+  min-height: 100vh;
+  min-width: 100vw;
   font-family: 'Roboto', sans-serif;
 }
 .container{
