@@ -25,6 +25,7 @@ document.getElementById('reg-form').addEventListener('submit', (e) => {
   validateConfirmPassword()
   ValidatedForm();
   
+  e.preventDefault()
 });
 
 const validateName = function(){
@@ -91,6 +92,7 @@ const ValidatedForm = function(){
 
     if (validateName() === true && validateLastname() === true && validateEmail() === true && validatePassword() === true && validateConfirmPassword() === true){
       alert(`Congratulations! ${user.firstname},\n Your registration was successful`);
+      clearInput();
   }
 }
  
@@ -115,3 +117,10 @@ const setSuccess = (element) => {
 
 }
 
+const clearInput = function(){
+  firstname.value = '';
+  lastname.value = '';
+  email.value = '';
+  password.value = '';
+  confirmPassword.value = '';
+}
