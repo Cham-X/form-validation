@@ -21,6 +21,9 @@ body{
   min-width: 200px;
   margin: 0 auto;
 }
+h2{
+  color: #4f4067;
+}
 form{
   display: flex;
   flex-direction: column;
@@ -80,9 +83,8 @@ label{
   transition: 0.5s all ease-in-out;
 }
 #submitBtn:hover{
-color: #333;;
-background-color: #fff;
-border: 1px solid #fff;
+background-color: #4f4067;
+border: 1px solid #4f4067;
 }
 .error{
   font-size: 00.8rem;
